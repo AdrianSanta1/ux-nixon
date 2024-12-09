@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-section">
+            <img src="https://imgcdn.stablediffusionweb.com/2024/5/7/0852e62d-a22c-4ae4-8415-01c9dd346f7c.jpg" alt="Persona sonriente">           
+            <div class="info-card">
+                <p>No olvides tener tu cédula, celular y correo electrónico a la mano.</p>
+            </div>
+        </div>        
+        <div class="form-section">
+            <div class="form-content">
+                <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Logo Banco Currix" class="header-image">
+                <h1>¡Regístrate!</h1>      
+                <p>Completa los siguientes datos para iniciar:</p>
+                <form class="styled-form">
+                    <div class="input-group">
+                        <label for="tipo-identificacion" class="input-label">
+                            <img src="https://cdn-icons-png.flaticon.com/128/839/839860.png" alt="Icono identificación" class="input-icon">
+                            Selecciona tu tipo de identificación
+                        </label>
+                        <select id="tipo-identificacion" class="input-field" required>
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option value="cc">Cédula de Ciudadanía</option>
+                            <option value="ce">Cédula de Extranjería</option>
+                            <option value="nit">NIT</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="numero-identificacion" class="input-label">
+                            <img src="https://cdn-icons-png.flaticon.com/128/82/82221.png" alt="Icono número" class="input-icon">
+                            Número de identificación
+                        </label>
+                        <input type="text" id="numero-identificacion" class="input-field" placeholder="Ingrese su número" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="fecha-expedicion" class="input-label">
+                            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Icono calendario" class="input-icon">
+                            Fecha de expedición
+                        </label>
+                        <input type="date" id="fecha-expedicion" class="input-field" required>
+                    </div>
+                    <button type="button" class="btn-submit" routerLink="/client/product-request">
+                        Inicia tu registro
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

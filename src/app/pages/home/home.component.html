@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+          <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Banco Caja Social">
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-items">
+            <li class="nav-item dropdown" (mouseover)="showDropdown()" (mouseout)="hideDropdown()">
+                <a href="#" class="nav-link">Productos &#9662;</a>
+                <ul class="dropdown-menu" [class.show]="dropdownVisible">
+                  <li><a routerLink="/client/product-request" class="dropdown-item">Solicitar productos</a></li>
+                  <li><a routerLink="/" class="dropdown-item">Productos</a></li>
+                  <li><a href="#" class="dropdown-item">Créditos</a></li>
+                  <li><a href="#" class="dropdown-item">Seguros</a></li>
+                </ul>
+              </li>              
+            <li class="nav-item">
+              <a href="#" class="nav-link outline-button" routerLink="/recargapse">Recarga PSE</a>
+            </li>
+            <li class="nav-item dropdown portal-button">
+                <a routerLink="/login" class="nav-link">Ingresar al Portal &#9662;</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="subtext">Disfrutar de los beneficios del Banco Amigo</p>
+                <h1>Cuenta Conmigo</h1>
+                <p class="description">Ahorra, invierte, recibe atención personalizada y mucho más</p>
+                <button class="btn-info">Conoce más información</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/contenido/piezas-home/personas/2024/septiembre/0209-banner-premio-amigo.png" alt="Imagen promocional">
+            </div>
+        </div>
+    </section>
+    
+    <section class="servicios">
+        <h2>Servicios a su alcance</h2>
+        <div class="servicios-lista">
+            <div class="servicio">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/cuentamiga.png" alt="Cuentamiga">
+                <p>CuentaDigital</p>
+            </div>
+            <div class="servicio">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/cuentas.png" alt="Crédito Amigo">
+                <p>Crédito Online</p>
+            </div>
+            <div class="servicio">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/vivienda.png" alt="Crédito Hipotecario">
+                <p>Crédito Hipotecario</p>
+            </div>
+            <div class="servicio">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/remesas.png" alt="Giros desde EEUU">
+                <p>Giros desde EEUU</p>
+            </div>
+            <div class="servicio">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/Recargas-PSE.png" alt="Recargar por PSE">
+                <p>Recargar por PSE</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="informacion">
+        <h2>Más información para usted</h2>
+        <div class="informacion-lista">
+            <div class="info-item">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/contenido/piezas-home/personas/2024/octubre/2110-cardpq-camp-tarjeta-debito.png" alt="Siempre quiere recibir más">
+                <h3>¡Siempre quiere recibir más!</h3>
+                <p>Pagos con tarjeta débito y gana beneficios.</p>
+                <button>Conozca más</button>
+            </div>
+            <div class="info-item">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/contenido/piezas-home/personas/2024/octubre/0310-recomgr-corresponsales-cuenta-conmigo.png" alt="Ahorre tiempo con nuestros corresponsales">
+                <h3>Ahorre tiempo con nuestros corresponsales</h3>
+                <p>Pago fácil, rápido y seguro sin filas.</p>
+                <button>Conozca más</button>
+            </div>
+            <div class="info-item">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/contenido/piezas-home/personas/2024/abril/Recom-pq-amigos-de-las-finanzas.png" alt="Aprenda con el curso">
+                <h3>Aprenda con el curso</h3>
+                <p>Curso gratuito sobre finanzas.</p>
+                <button>Conozca más</button>
+            </div>
+            <div class="info-item">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/contenido/piezas-home/personas/2024/febrero/Recomendados-Pequen%CC%83a-actualizacion-de-datos.png" alt="Actualizar datos">
+                <h3>Actualice sus datos</h3>
+                <p>Actualice su información a través de nuestra línea o sitio web.</p>
+                <button>Conozca más</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="canales">
+        <h2>Canales de atención</h2>
+        <div class="canales-lista">
+            <div class="canal">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/ubiquenos.png" alt="Ubíquenos">
+                <p>Ubíquenos</p>
+            </div>
+            <div class="canal">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/contactenos.png" alt="Contáctenos">
+                <p>Contáctenos</p>
+            </div>
+            <div class="canal">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/lineas-de-atencion.png" alt="Líneas de atención">
+                <p>Líneas de atención</p>
+            </div>
+            <div class="canal">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/directorios-alternos.png" alt="Directorios">
+                <p>Directorios internos</p>
+            </div>
+            <div class="canal">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/iconos/accesos-rapidos/lineas-de-cobranza.png" alt="Cobranza">
+                <p>Servicio de cobranza</p>
+            </div>
+        </div>
+        <div class="app-download">
+            <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/logos/bcs-app-store.png" alt="Consíguelo en el App Store">
+            </a>
+            <a href="https://play.google.com/store" target="_blank">
+                <img src="https://www.bancocajasocial.com/content/dam/bcs/logos/bcs-google-play.png" alt="Disponible en Google Play">
+            </a>
+        </div>
+    </section>
+    <footer class="footer-container">
+        <div class="footer-top">
+            <p>¡Estamos para ayudarte!</p>
+            <div class="footer-links">
+                <a href="#"><i class="icon-pencil"></i> Escríbenos</a>
+                <a href="#"><i class="icon-question"></i> Preguntas frecuentes</a>
+                <a href="#"><i class="icon-phone"></i> Línea Ética</a>
+            </div>
+        </div>        
+    
+        <div class="footer-middle">
+            <div class="footer-contact">
+                <h3>Línea AudioCurrex</h3>
+                <p>
+                    Si tienes alguna duda, queja o reclamo comunícate con la línea de tu ciudad.
+                    Banco Currex Bogotá
+                </p>
+                <div class="contact-list">
+                    <div><strong>Bogotá:</strong> +57 601 000000</div>
+                    <div><strong>Medellín:</strong> +57 604 000000</div>
+                    <div><strong>Cali:</strong> +57 602 000000</div>
+                    <div><strong>Barranquilla:</strong> +57 605 000000</div>
+                    <div><strong>Bucaramanga:</strong> +57 607 0000000</div>
+                    <div><strong>Resto del país:</strong> +57 01 8000 00 0000</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="https://www.avvillas.com.co/documents/37648/41525/facebook.svg/a5948ad3-78b8-fa7f-75d3-a6f1b124c350?t=1633990254446" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="https://www.avvillas.com.co/documents/37648/41525/instagram.svg/55658c81-e02c-2009-1703-9dbf7ec92efd?t=1633990254577" alt="Instagram"></a>
+                <a href="https://tiktok.com" target="_blank"><img src="https://www.avvillas.com.co/documents/37648/41525/tik+tok.svg/11e3a76b-9043-2024-574e-13afa4c5a8c7?t=1690239200469" alt="TikTok"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="https://www.avvillas.com.co/documents/37648/41525/wa2.svg/066f70a8-77ae-67a2-e593-5feed5567769?t=1713719104086" alt="WhatsApp"></a>
+                <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank"><img src="https://www.avvillas.com.co/documents/37648/561281/youtube.svg/a488746f-ae6c-026c-9094-b1e0a2614e82?t=1673630702428" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

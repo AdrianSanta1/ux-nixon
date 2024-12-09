@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .profile-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-size: 22px; /* Agrandar el título principal */
+
+  }
+  
+  .profile-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+  }
+  
+  .profile-info,
+  .profile-settings {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .profile-info h3,
+  .profile-settings h3 {
+    color: #e74c3c;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .profile-settings h4 {
+    font-size: 18px;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    width: 80%;
+    padding: 10px;
+    max-width: 300px; /* Define un ancho máximo deseado */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .setting {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .setting input {
+    width: 18px;
+    height: 18px;
+    accent-color: #15ff00;
+  }
+  
+  .setting label {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .setting input:checked + label {
+    color: #2c3e50;
+  }
+  
+  .setting:hover label {
+    color: #ff0000;
+  }
+  
+  .setting:hover i {
+    color: #ff0000;
+  }
+  
+  .profile-actions {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .cancel-btn,
+  .save-btn {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-btn {
+    background-color: #7f8c8d;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #636e72;
+  }
+  
+  .save-btn:hover {
+    background-color: #c0392b;
+  }
+  

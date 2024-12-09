@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Banco Currex</title>
+</head>
+<body>
+    <section class="container">
+        <section class="login-form">
+            <h1>Bienvenido a</h1>
+            <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Banco Popular" class="login-logo">
+            <form action="#">
+                <div class="input-group">
+                    <label for="document-type">Tipo de documento</label>
+                    <select id="document-type">
+                        <option>Cédula de Ciudadanía</option>
+                        <option>Pasaporte</option>
+                        <option>Tarjeta de Identidad</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="document-number">Número de documento</label>
+                    <input type="text" id="document-number" placeholder="Ingrese su número de documento" required>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recordar tipo y número de documento</label>
+                </div>
+                <button routerLink="/client/my-products" type="button" class="btn-submit">
+                    Continuar
+                </button>
+            </form>
+            <p class="forgot-password">
+                <a routerLink="/forgot-password">¿Olvidaste tu contraseña?</a>
+            </p>            
+            <p class="register-link">
+                ¿No eres usuario? <a routerLink="/register">Regístrate aquí</a>
+            </p>
+        </section>
+    </section>
+        <section class="help-section">
+            <h2>¿Cómo podemos ayudarte?</h2>
+            <div class="help-options">
+                <div class="help-option-box">
+                    <div class="help-option" routerLink="/client/product-request" style="cursor: pointer;">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8633/8633637.png" alt="Solicitar productos">
+                        <p>Solicitar productos</p>
+                    </div>                    
+                </div>
+                <div class="help-option-box">
+                    <div class="help-option">
+                        <img src="https://cdn-icons-png.flaticon.com/128/179/179640.png" alt="Contáctanos">
+                        <p>Contáctanos</p>
+                    </div>
+                </div>
+                <div class="help-option-box">
+                    <div class="help-option">
+                        <img src="https://cdn-icons-png.flaticon.com/128/6339/6339264.png" alt="Visitarnos">
+                        <p>Visitarnos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

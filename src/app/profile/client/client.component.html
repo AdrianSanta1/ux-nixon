@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="back-link" routerLink="/client/my-products">&lt; Volver</a>
+        </div>
+        <div class="header-center">
+            <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Currex" class="logo">
+        </div>
+        <div class="header-right">
+            <a routerLink="/client/my-products" class="exit-link">Salir</a>
+        </div>        
+    </header>
+    <nav class="tabs">
+        <div class="tab active">Básicos</div>
+        <div class="tab">Contacto</div>
+        <div class="tab">Financieros</div>
+    </nav>
+    <main class="form-container">
+        <section class="form-section">
+            <h2 class="section-title">
+                <span class="icon">👤</span> Personales
+            </h2>
+            <form>
+                <div class="form-group">
+                    <label for="estado-civil">Estado civil</label>
+                    <select disabled>
+                        <option value="soltero" selected>Soltero</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="educacion">Nivel de educación</label>
+                    <select id="educacion" name="educacion" disabled>
+                        <option value="universitario" selected>Universitario</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacion">Ocupación</label>
+                    <select id="ocupacion" name="ocupacion" disabled>
+                        <option value="empleado-privado" selected>Profesor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sector">
+                        Sector <span class="info-icon" title="Sector en el que trabajas">ℹ️</span>
+                    </label>
+                    <select id="sector" name="sector" disabled>
+                        <option value="asalariados" selected>Asalariados</option>
+                    </select>
+                </div>                
+
+                <!-- Información de Cuenta -->
+                <h2 class="section-title">
+                    <span class="icon">📧</span> Información de Cuenta
+                </h2>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" value="nduarte@uniempresarial.edu.co" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" value="Nixon Alonso Duarte Acosta" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" value="30" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" value="Cra. 33a #30 - 20, Bogotá" readonly>
+                </div>                
+            </form>
+        </section>
+    </main>
+</body>
+</html>

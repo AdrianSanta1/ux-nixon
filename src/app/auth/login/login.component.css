@@ -1,0 +1,239 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+        url('https://www.bancolombia.com/wcm/connect/www.bancolombia.com-26918/98c1a687-eb89-4214-919e-49ace2031bf0/il-devices.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_K9HC1202P864E0Q30449MS3000-98c1a687-eb89-4214-919e-49ace2031bf0-nM9z0Gi') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #2a3b5f;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+/* Login Form */
+.login-form {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+    font-size: 28px;
+    color: #274472;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-logo {
+    width: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #2a3b5f;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group select,
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+/* Remember Checkbox */
+.remember {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember input {
+    margin-right: 8px;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #274472;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1c3558;
+}
+
+/* Links */
+.forgot-password {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a {
+    font-size: 14px;
+    color: #274472;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #1c3558;
+    transform: scale(1.05);
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #274472;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Help Section */
+.help-section {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.help-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2a3b5f;
+}
+
+.help-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.help-option-box {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #f1f6fb;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin: 10px;
+}
+
+.help-option-box:hover {
+    color: white;
+    transform: translateY(-10px);
+}
+
+.help-option img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.help-option p {
+    font-size: 16px;
+    color: #2a3b5f;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .help-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .help-option-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-form h1 {
+        font-size: 22px;
+    }
+
+    .btn-submit {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .help-option img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .help-option p {
+        font-size: 14px;
+    }
+}

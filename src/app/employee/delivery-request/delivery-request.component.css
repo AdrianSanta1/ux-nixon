@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+        url('https://www.bancolombia.com/wcm/connect/www.bancolombia.com-26918/c829dfcb-f89d-4fd7-915d-4210768913e8/lines-left.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_K9HC1202P86O40QTNS9EAE1S47-c829dfcb-f89d-4fd7-915d-4210768913e8-nK3K0Nt') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #003366;
+}
+
+.search-section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background-color: #f7f9fc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.search-bar label {
+    font-size: 20px;
+    color: #555;
+}
+
+.search-bar select,
+.search-bar button {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.search-bar button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #00509e;
+}
+
+.table-section {
+    margin-top: 40px;
+}
+
+.table-section h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #003366;
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+.data-table th,
+.data-table td {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f7f9fc;
+    font-size: 18px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.data-table td {
+    font-size: 18px;
+    color: #555;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #eef5ff;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar label {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .search-bar select,
+    .search-bar button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .table-section h2 {
+        font-size: 20px;
+    }
+
+    .data-table th,
+    .data-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

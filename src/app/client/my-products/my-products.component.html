@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Banco Currix">
+            </div>
+            <nav class="menu">
+                <div class="menu-item-container">
+                    <a href="#" class="menu-item active">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9167/9167812.png" alt="Icono productos">
+                        <span>Productos</span>
+                    </a>
+                </div>
+                <div class="menu-item-container">
+                    <a routerLink="/recargapse" class="menu-item">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077976.png" alt="Icono pagos">
+                        <span>Pagos</span>
+                    </a>
+                </div>                
+                <div class="menu-item-container">
+                    <a class="menu-item">
+                        <img src="https://cdn-icons-png.flaticon.com/128/6404/6404782.png" alt="Icono transferencias">
+                        <span>Transferencias</span>
+                    </a>
+                </div>
+                <div class="menu-item-container">
+                    <a class="menu-item">
+                        <img src="https://cdn-icons-png.flaticon.com/128/888/888034.png" alt="Icono documentos">
+                        <span>Documentos</span>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+<main class="main-content">
+    <header class="header">
+        <div class="welcome">
+            Buenas tardes, <span>Nixon</span>
+        </div>
+        <div class="header-options">
+            <a routerLink="/profile/client" class="option">
+                <img src="https://cdn-icons-png.flaticon.com/128/8188/8188360.png" alt="Perfil">
+                Perfil
+            </a>            
+            <a class="option">
+                <img src="https://cdn-icons-png.flaticon.com/128/735/735803.png" alt="Seguridad">
+                Seguridad
+            </a>
+            <a class="option">
+                <img src="https://cdn-icons-png.flaticon.com/128/950/950299.png" alt="Contacto">
+                Contacto
+            </a>
+            <a routerLink="/client/product-request" class="option">
+                <img src="https://cdn-icons-png.flaticon.com/128/2640/2640554.png" alt="Solicitar productos">
+                Solicitar productos
+            </a>            
+            <a href="#" class="option logout">
+                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828427.png" alt="Salida segura">
+                Salida segura
+            </a>
+        </div>
+    </header>
+    <section class="finance-overview">
+        <h2>¿Cómo se ven tus Productos?</h2>
+        <div class="finance-section">
+            <div class="card-group">
+                <div class="card total-savings">
+                    <div class="icon savings-icon"></div>
+                    <p class="amount">$495,773.15</p>
+                    <p class="title">Total ahorros</p>
+                </div>
+                <div class="card account-card">
+                    <div class="account-header">
+                        <div class="icon account-icon"></div>
+                        <div>
+                            <h3>Cuenta de Ahorros</h3>
+                            <p>No. ******6503</p>
+                            <p>Tag AVAL: </p>
+                        </div>
+                    </div>
+                    <div class="account-balance">
+                        <p><strong>Saldo disponible:</strong> $495,773.15</p>
+                    </div>
+                    <p><strong>Saldo total:</strong> $495,773.15</p>
+                </div>
+            </div>
+                <div class="card-group">
+                <div class="card total-credit">
+                    <div class="icon savings-icon"></div>
+                    <p class="amount">$495,773.15</p>
+                    <p class="title">Total Crédito</p>
+                </div>
+                <div class="card account-card">
+                    <div class="account-header">
+                        <div class="icon credit-icon"></div>
+                        <div>
+                            <h3>Cuenta de Crédito</h3>
+                            <p>No. ******1234</p>
+                            <p>Tag CREDITO: </p>
+                        </div>
+                    </div>
+                    <div class="account-balance">
+                        <p><strong>Saldo disponible:</strong> $300,000.00</p>
+                    </div>
+                    <p><strong>Saldo total:</strong> $500,000.00</p>
+                </div>
+            </div>
+                <div class="card other-credits">
+                <div class="icon credits-icon"></div>
+                <p class="title">Otros créditos</p>
+                <p class="subtitle">Libranzas.</p>
+                <div class="toggle-switch"></div>
+            </div>
+        </div>
+    </section>
+</main>
+    </div>
+</body>
+</html>

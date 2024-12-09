@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #2a3b5f; 
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f1f6fb; 
+    color: #2a3b5f; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 100vh;
+    border-radius: 0 100px 100px 0;
+    border-right: 3px solid #d6e4ec; 
+}
+
+
+.logo img {
+    margin-top: 50px;
+    width: 200px;
+    margin-bottom: 150px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: auto;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #2a3b5f; 
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+}
+.menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    filter: invert(26%) sepia(24%) saturate(1205%) hue-rotate(184deg) brightness(90%) contrast(85%);
+}
+
+
+.menu-item:hover {
+    background-color: #d6e4ec; 
+    transform: scale(1.05);
+}
+
+.menu-item.active {
+    background-color: #b0c4d9; 
+    padding-left: 15px;
+}
+
+.logo img {
+    margin-top: 50px;
+    width: 180px;
+    margin-bottom: 80px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f6fb; 
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.welcome {
+    font-size: 18px;
+    font-weight: normal;
+    color: #2a3b5f;
+}
+
+.welcome span {
+    font-weight: bold;
+}
+
+.header-options {
+    display: flex;
+    gap: 50px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #2a3b5f; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.option img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.option:hover {
+    color: #1c3558; 
+    transform: scale(1.20);
+}
+
+.logout:hover {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.logout img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.finance-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.finance-overview {
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.card .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.savings-icon,
+.account-icon,
+.credit-icon,
+.credits-icon {
+    background-color: #3c5a7c; 
+    color: white;
+}
+
+.card p {
+    font-size: 20px;
+    color: #2a3b5f; 
+}
+
+.account-card strong {
+    font-size: 16px;
+}
+
+.other-credits .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3b5f;
+}
+
+.other-credits .subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        flex-direction: column; /* Cambia el layout a vertical */
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%; /* Ocupa el ancho completo */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 0; /* Remueve bordes redondeados */
+    }
+
+    .logo img {
+        width: 150px; /* Reduce el tamaño del logo */
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: row; /* Muestra el menú en fila */
+        flex-wrap: wrap; /* Permite que se ajuste en múltiples líneas */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu-item {
+        font-size: 14px; /* Reduce el tamaño de las opciones */
+        width: auto; /* Ajusta el tamaño al contenido */
+    }
+
+    .main-content {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .header {
+        flex-direction: column; /* Ajusta el encabezado en formato vertical */
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .finance-section {
+        gap: 60px; /* Reduce el espacio en dispositivos pequeños */
+        justify-content: space-between; /* Ajusta las tarjetas al ancho disponible */
+    }
+
+
+    .header-options {
+        gap: 20px; /* Reduce el espacio entre opciones */
+        flex-wrap: wrap; /* Ajusta las opciones en múltiples líneas */
+    }
+
+    .card {
+        width: 100%; /* Asegura que las tarjetas ocupen el ancho disponible */
+        margin-bottom: 20px; /* Espaciado entre tarjetas */
+    }
+
+    h2 {
+        font-size: 16px; /* Reduce el tamaño del título */
+    }
+}

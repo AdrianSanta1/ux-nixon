@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+        url('https://www.bancolombia.com/wcm/connect/www.bancolombia.com-26918/c829dfcb-f89d-4fd7-915d-4210768913e8/lines-left.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_K9HC1202P86O40QTNS9EAE1S47-c829dfcb-f89d-4fd7-915d-4210768913e8-nK3K0Nt') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.create-product-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 40px 50px;
+}
+
+.info-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.create-product-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-product-header .logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.create-product-header h1 {
+    font-size: 36px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.create-product-header .subtext {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.create-product-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #00509e;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #003366;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background: #f8f9fa;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00509e;
+    box-shadow: 0 0 8px rgba(0, 80, 158, 0.5);
+    outline: none;
+}
+
+.btn-submit {
+    padding: 10px 20px; 
+    background: linear-gradient(45deg, #c2c8ce, #8c9cac);
+    color: white;
+    border: none;
+    border-radius: 50px; 
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.2s ease;
+    width: auto;
+    margin: 20px 400px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-submit:hover {
+    background: linear-gradient(45deg, #003366, #00509e);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

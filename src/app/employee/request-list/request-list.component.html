@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Portal de Solicitudes</h1>
+        </header>
+        <div class="search-section">
+            <div class="search-bar">
+                <label for="estado-solicitud">Estado Solicitud:</label>
+                <select id="estado-solicitud" name="estado-solicitud">
+                    <option value="">Seleccionar</option>
+                    <option value="aprobada">Aprobada</option>
+                    <option value="rechazada">Rechazada</option>
+                    <option value="pendiente">Pendiente</option>
+                </select>
+                <button class="search-button">Buscar</button>
+                <button class="deliveries-button" routerLink="/employee/delivery-request">Entregas</button> <!-- Botón añadido -->
+            </div>
+        </div>
+        <section class="table-section">
+            <h2>Resultados</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Documento</th>
+                        <th>Número de Documento</th>
+                        <th>Número Telefónico</th>
+                        <th>Correo Electrónico</th>
+                        <th>Estado Solicitud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cédula</td>
+                        <td>123456789</td>
+                        <td>3001234567</td>
+                        <td>usuario1&#64;example.com</td>
+                        <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                        <td>Pasaporte</td>
+                        <td>PA123456</td>
+                        <td>3123456789</td>
+                        <td>usuario2&#64;example.com</td>
+                        <td>Rechazada</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta de Identidad</td>
+                        <td>TI987654321</td>
+                        <td>3159876543</td>
+                        <td>usuario3&#64;example.com</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta de Identidad</td>
+                        <td>TI987654321</td>
+                        <td>3159876543</td>
+                        <td>usuario3&#64;example.com</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta de Identidad</td>
+                        <td>TI987654321</td>
+                        <td>3159876543</td>
+                        <td>usuario3&#64;example.com</td>
+                        <td>Pendiente</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta de Identidad</td>
+                        <td>TI987654321</td>
+                        <td>3159876543</td>
+                        <td>usuario3&#64;example.com</td>
+                        <td>Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

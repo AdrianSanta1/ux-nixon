@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Perfil Empleado</h2>
+        <div class="profile-content">
+            <div class="profile-info">
+                <h3>Información</h3>
+                <form>
+                    <label for="username">Usuario *</label>
+                    <input type="text" id="username" placeholder="nduarte" required disabled />
+    
+                    <label for="name">Nombre *</label>
+                    <input type="text" id="name" placeholder="Nixon" required disabled />
+    
+                    <label for="lastname">Apellidos *</label>
+                    <input type="text" id="lastname" placeholder="Duarte" required disabled />
+    
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="nduarte@uniempresarial.edu.co" required disabled />
+    
+                    <label for="employee-number">Nº Empleado</label>
+                    <input type="text" id="employee-number" placeholder="0012" disabled />
+    
+                    <label for="role">Puesto</label>
+                    <input type="text" id="role" placeholder="Profesor Profesional en Tecnologias" disabled />
+    
+                    <label for="responsibilities">Responsabilidades</label>
+                    <textarea id="responsibilities" placeholder="Responsable de impartir formación en ingeniería de software, desarrollar investigación aplicada"disabled></textarea>
+                </form>
+            </div>
+    
+            <!-- Ajustes -->
+            <div class="profile-settings">
+                <h3>Ajustes</h3>
+                <form>
+                    <div class="setting">
+                        <input type="checkbox" id="block-upload-documents" disabled />
+                        <label for="block-upload-documents">
+                            <i class="fas fa-file-upload"></i> Bloquear subida documentos
+                        </label>
+                    </div>
+    
+                    <div class="setting">
+                        <input type="checkbox" id="block-delete-documents" disabled />
+                        <label for="block-delete-documents">
+                            <i class="fas fa-trash-alt"></i> Bloquear borrar documentos
+                        </label>
+                    </div>
+    
+                    <div class="setting">
+                        <input type="checkbox" id="private-user" disabled />
+                        <label for="private-user">
+                            <i class="fas fa-user-secret"></i> Usuario privado
+                        </label>
+                    </div>
+    
+                    <div class="setting">
+                        <input type="checkbox" id="restrict-hours" disabled />
+                        <label for="restrict-hours">
+                            <i class="fas fa-clock"></i> Restringir horario
+                        </label>
+                    </div>
+    
+                    <h4>Acciones adicionales</h4>
+                    <div class="setting">
+                        <input type="checkbox" id="enable-notifications" disabled />
+                        <label for="enable-notifications">
+                            <i class="fas fa-bell"></i> Activar notificaciones
+                        </label>
+                    </div>
+    
+                    <div class="setting">
+                        <input type="checkbox" id="email-reports" disabled />
+                        <label for="email-reports">
+                            <i class="fas fa-envelope"></i> Enviar reportes por email
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <button class="cancel-btn" disabled>Cancelar</button>
+            <button class="save-btn" disabled>Guardar</button>
+        </div>
+    </div>    
+</body>
+</html>

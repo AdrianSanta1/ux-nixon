@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Recarga</title>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step active">
+                <div class="circle">1</div>
+                <p>Ingresa los datos</p>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <p>Realiza la transacción</p>
+            </div>
+        </div>
+        <div class="form-container-horizontal">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo-producto">Producto a recargar:</label>
+                        <select id="tipo-producto" class="form-control">
+                            <option value="">Selecciona una opción</option>
+                            <option value="recarga">Cuenta de Ahorro</option>
+                            <option value="recarga">Tarjeta de Crédito</option>
+                            <option value="recarga">Crédito Hipotecario</option>
+                            <option value="recarga">Seguro de Vida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero-producto">Número de producto:</label>
+                        <input type="text" id="numero-producto" class="form-control" placeholder="Número de producto">
+                        <small>Este puede ser de 9, 10, 16 o 20 dígitos.</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo-documento">Tipo de documento:</label>
+                        <select id="tipo-documento" class="form-control">
+                            <option value="">Selecciona un tipo</option>
+                            <option value="cc">Cédula de ciudadanía</option>
+                            <option value="ti">Tarjeta de identidad</option>
+                            <option value="pp">Pasaporte</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero-documento">Número de documento:</label>
+                        <input type="text" id="numero-documento" class="form-control" placeholder="Número de documento">
+                        <small>Ingresa sin puntos ni caracteres especiales.</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="valor">Valor a recargar:</label>
+                        <input type="text" id="valor" class="form-control" placeholder="Valor">
+                        <small>Esta operación no tiene costo. Ingresa sin puntos ni caracteres especiales.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="banco-origen">Banco de origen:</label>
+                        <select id="banco-origen" class="form-control">
+                            <option value="">Selecciona un banco</option>
+                            <option value="bancolombia">Bancolombia</option>
+                            <option value="davivienda">Davivienda</option>
+                            <option value="bbva">BBVA</option>
+                            <option value="banco-de-bogota">Banco de Bogotá</option>
+                            <option value="banco-popular">Banco Popular</option>
+                            <option value="banco-agrario">Banco Agrario</option>
+                            <option value="colpatria">Banco Colpatria</option>
+                            <option value="banco-de-occidente">Banco de Occidente</option>
+                            <option value="itau">Banco Itaú</option>
+                            <option value="av-villas">Banco AV Villas</option>
+                            <option value="scotiabank">Scotiabank Colpatria</option>
+                            <option value="coopcentral">Banco Cooperativo Coopcentral</option>
+                            <option value="gnb-sudameris">GNB Sudameris</option>
+                            <option value="bancoomeva">Bancoomeva</option>
+                            <option value="finandina">Banco Finandina</option>
+                            <option value="serfinanza">Banco Serfinanza</option>
+                            <option value="movii">Movii</option>
+                            <option value="nequi">Nequi</option>
+                            <option value="daviplata">Daviplata</option>
+                        </select>
+                    </div>                    
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" routerLink="/">Volver</button>
+                    <button type="submit" class="btn-primary">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

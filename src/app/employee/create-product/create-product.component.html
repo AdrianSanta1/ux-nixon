@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Productos Bancarios</title>
+</head>
+<body>
+    <div class="create-product-container">
+        <div class="create-product-header">
+            <img src="https://currex.com.br/wp-content/uploads/2023/11/Logo-horizontal.svg" alt="Currex Logo" class="logo">
+            <h1>Creación de Productos Bancarios</h1>
+            <p class="subtext">Personaliza y administra productos financieros con facilidad</p>
+        </div>
+        <div class="create-product-form">
+            <h2>Completa los Detalles del Producto</h2>
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="product-type">Tipo de Producto</label>
+                        <select id="product-type" required>
+                            <option value="" disabled selected>Seleccionar tipo de producto</option>
+                            <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                            <option value="cuenta-ahorros">Cuenta de Ahorros</option>
+                            <option value="credito-hipotecario">Crédito Hipotecario</option>
+                            <option value="seguro-vida">Seguro de Vida</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-name">Nombre del Producto</label>
+                        <input type="text" id="product-name" placeholder="Ej. Tarjeta Platinum" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest-rate">Tasa de Interés (%)</label>
+                        <input type="number" id="interest-rate" placeholder="Ej. 12.5" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="currency">Moneda</label>
+                        <select id="currency" required>
+                            <option value="COP">COP (Peso Colombiano)</option>
+                            <option value="USD">USD (Dólar)</option>
+                            <option value="EUR">EUR (Euro)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="credit-limit">Límite de Crédito (COP)</label>
+                        <select id="credit-limit" required>
+                            <option value="" disabled selected>Seleccionar límite de crédito</option>
+                            <option value="1000000">1,000,000 COP</option>
+                            <option value="5000000">5,000,000 COP</option>
+                            <option value="10000000">10,000,000 COP</option>
+                            <option value="20000000">20,000,000 COP</option>
+                            <option value="50000000">50,000,000 COP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Categoría</label>
+                        <select id="category" required>
+                            <option value="personal">Personal</option>
+                            <option value="negocios">Negocios</option>
+                            <option value="estudiantes">Estudiantes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-frequency">Periodicidad de Pago</label>
+                        <select id="payment-frequency" required>
+                            <option value="" disabled selected>Seleccionar periodicidad</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Trimestral</option>
+                            <option value="anual">Anual</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="upload-file">Adjuntar Archivos</label>
+                        <input type="file" id="upload-file" multiple>
+                    </div>
+                    <div class="form-group">
+                        <label for="age-limit">Límite de Edad para Elegibilidad</label>
+                        <select id="age-limit" required>
+                            <option value="" disabled selected>Seleccionar límite de edad</option>
+                            <option value="18-25">18-25 años</option>
+                            <option value="26-35">26-35 años</option>
+                            <option value="36-50">36-50 años</option>
+                            <option value="51-65">51-65 años</option>
+                            <option value="mayores-65">Mayores de 65 años</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Crear Producto</button>
+            </form>
+        </div>
+        <div class="info-card">
+            Recuerda verificar los datos antes de crear un nuevo producto financiero.
+        </div>
+    </div>
+</body>
+</html>
